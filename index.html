@@ -27,7 +27,7 @@
 <body>
 	<label for="gravityY">ball.body.gravity.y = </label><input type="text" id="gravityY" value="3000"><span> Гравитация по Y.</span><br>
 	<label for="bounce">ball.body.bounce = </label><input type="text" id="bounce" value="0.9"><span> Множитель скорости после соударения с землей.</span><br>
-	<label for="vel">Set velocity</label> <input type="text" id="velX" value="100"><input type="text" id="velY" value="100"><button onclick="setVel()">push</button><span> Придать скорость мячу по (x,y).</span>
+	<label for="vel">Set velocity</label> <input type="text" id="velX" value="1000"><input type="text" id="velY" value="1000"><button onclick="setVel()">push</button><span> Придать скорость мячу по (x,y).</span>
 	<script>
 		function setVel(){
 			ball.body.velocity.set(+$("#velX").val(),+$("#velY").val());
