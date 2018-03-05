@@ -18,9 +18,9 @@ function create() {
 
 	ball.body.collideWorldBounds = true;
 
-	ball.body.bounce.set(0.9);
+	ball.body.bounce.set(+$("#bounce").val());
 
-	ball.body.gravity.y = 3000;
+	ball.body.gravity.y = +$("#gravityY").val();
 
 
 	ball.body.velocity.set(150);
@@ -38,6 +38,7 @@ function update () {
   }
 
   function render () {
-
+  	ball.body.gravity.y = +$("#gravityY").val();
+  	ball.body.bounce.set( +$("#bounce").val() );
   	// game.debug.body(ball);
   }
