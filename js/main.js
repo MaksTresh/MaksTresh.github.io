@@ -39,6 +39,5 @@ function update () {
 
   function render () {
 
-  	game.debug.body(ball);
-
+  	// game.debug.body(ball);
   }
